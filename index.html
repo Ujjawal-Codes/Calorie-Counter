@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Calorie Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍽️ Daily Calorie Tracker</h1>
+
+  <div class="container">
+    <button class="btn-add">+ Add Food</button>
+    <button class="btn-reset">Reset</button>
+
+    <div class="food-list" id="foodList">
+      <!-- Food items added by user will appear here -->
+    </div>
+
+    <div class="totals" id="totals">
+      Total Calories: 0 kcal | Protein: 0g | Carbs: 0g | Fats: 0g
+    </div>
+  </div>
+
+  <!-- Add Food Modal -->
+  <div class="modal" id="foodModal">
+    <div class="modal-content">
+      <div class="modal-header">Select Food to Add</div>
+      <select id="foodSelect"></select>
+      <input type="number" id="foodQuantity" placeholder="Quantity (g or pcs)" min="0" required>
+
+      <div class="modal-buttons">
+        <button id="cancelBtn">Cancel</button>
+        <button id="saveBtn" class="btn-add">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Watermark -->
+  <div class="watermark">Created By: Ujjawal Shandilya</div>
+
+  <!-- Floating animations -->
+  <div class="floating"></div>
+  <div class="floating"></div>
+  <div class="floating"></div>
+  <div class="floating"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
